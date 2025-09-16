@@ -58,10 +58,25 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
       },
+      backgroundImage: {
+        'gradient-ocean': 'var(--gradient-ocean)',
+        'gradient-sunset': 'var(--gradient-sunset)',
+        'gradient-hero': 'var(--gradient-hero)',
+      },
+      boxShadow: {
+        'ocean': 'var(--shadow-ocean)',
+        'tropical': 'var(--shadow-tropical)',
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+        "float": "float 6s ease-in-out infinite",
+        "fade-in": "fade-in 0.6s ease-out",
       },
       keyframes: {
         "accordion-down": {
@@ -80,10 +95,24 @@ export default {
             height: "0",
           },
         },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        "float": {
+          "0%, 100%": {
+            transform: "translateY(0px)",
+          },
+          "50%": {
+            transform: "translateY(-20px)",
+          },
+        },
+        "fade-in": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(20px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0px)",
+          },
+        },
       },
     },
   },
