@@ -3,44 +3,50 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { MapPin, Utensils, Camera, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-ceara.jpg";
-
-const cidades = [
-  { id: "fortaleza", nome: "Fortaleza", descricao: "Capital vibrante com praias urbanas" },
-  { id: "jericoacoara", nome: "Jericoacoara", descricao: "Paraíso das dunas e lagoas" },
-  { id: "canoa-quebrada", nome: "Canoa Quebrada", descricao: "Falésias coloridas e pôr do sol" },
-  { id: "cumbuco", nome: "Cumbuco", descricao: "Aventura em dunas e lagoas" },
-  { id: "icapui", nome: "Icapuí", descricao: "Praias selvagens e intocadas" },
-];
-
-const destaques = [
-  { 
-    icon: <Utensils className="h-6 w-6" />, 
-    titulo: "Gastronomia", 
-    descricao: "Sabores únicos do mar e sertão",
-    link: "/restaurantes"
-  },
-  { 
-    icon: <Camera className="h-6 w-6" />, 
-    titulo: "Passeios", 
-    descricao: "Aventuras inesquecíveis",
-    link: "/passeios"
-  },
-  { 
-    icon: <Star className="h-6 w-6" />, 
-    titulo: "Roteiros", 
-    descricao: "Experiências completas",
-    link: "/roteiros"
-  },
-];
-
+const cidades = [{
+  id: "fortaleza",
+  nome: "Fortaleza",
+  descricao: "Capital vibrante com praias urbanas"
+}, {
+  id: "jericoacoara",
+  nome: "Jericoacoara",
+  descricao: "Paraíso das dunas e lagoas"
+}, {
+  id: "canoa-quebrada",
+  nome: "Canoa Quebrada",
+  descricao: "Falésias coloridas e pôr do sol"
+}, {
+  id: "cumbuco",
+  nome: "Cumbuco",
+  descricao: "Aventura em dunas e lagoas"
+}, {
+  id: "icapui",
+  nome: "Icapuí",
+  descricao: "Praias selvagens e intocadas"
+}];
+const destaques = [{
+  icon: <Utensils className="h-6 w-6" />,
+  titulo: "Gastronomia",
+  descricao: "Sabores únicos do mar e sertão",
+  link: "/restaurantes"
+}, {
+  icon: <Camera className="h-6 w-6" />,
+  titulo: "Passeios",
+  descricao: "Aventuras inesquecíveis",
+  link: "/passeios"
+}, {
+  icon: <Star className="h-6 w-6" />,
+  titulo: "Roteiros",
+  descricao: "Experiências completas",
+  link: "/roteiros"
+}];
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Navbar */}
       <nav className="bg-white/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <Link to="/" className="text-2xl font-bold gradient-ocean bg-clip-text text-transparent">
+            <Link to="/" className="text-2xl font-bold gradient-ocean bg-clip-text ">
               O Mapa do Viajante
             </Link>
             <div className="hidden md:flex items-center space-x-6">
@@ -63,16 +69,15 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: `url(${heroImage})`
+      }} />
         <div className="absolute inset-0 bg-black/40" />
         
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
             Descubra o{" "}
-            <span className="gradient-hero bg-clip-text text-transparent">
+            <span className="gradient-hero bg-clip-text ">
               Ceará
             </span>
           </h1>
@@ -103,12 +108,9 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {cidades.map((cidade, index) => (
-              <Card 
-                key={cidade.id} 
-                className="group hover:shadow-tropical transition-smooth cursor-pointer transform hover:-translate-y-2"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
+            {cidades.map((cidade, index) => <Card key={cidade.id} className="group hover:shadow-tropical transition-smooth cursor-pointer transform hover:-translate-y-2" style={{
+            animationDelay: `${index * 0.1}s`
+          }}>
                 <CardHeader>
                   <CardTitle className="group-hover:text-primary transition-smooth">
                     {cidade.nome}
@@ -122,8 +124,7 @@ const Index = () => {
                     </Button>
                   </Link>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -139,12 +140,7 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {destaques.map((destaque, index) => (
-              <Link 
-                key={index}
-                to={destaque.link}
-                className="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center hover:bg-white/20 transition-smooth transform hover:-translate-y-2"
-              >
+            {destaques.map((destaque, index) => <Link key={index} to={destaque.link} className="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center hover:bg-white/20 transition-smooth transform hover:-translate-y-2">
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/20 mb-6 group-hover:bg-white/30 transition-smooth">
                   <div className="text-white">
                     {destaque.icon}
@@ -152,8 +148,7 @@ const Index = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4">{destaque.titulo}</h3>
                 <p className="text-white/80">{destaque.descricao}</p>
-              </Link>
-            ))}
+              </Link>)}
           </div>
         </div>
       </section>
@@ -214,8 +209,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
