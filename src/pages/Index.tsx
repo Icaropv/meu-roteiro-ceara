@@ -41,7 +41,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="text-2xl font-bold gradient-ocean bg-clip-text text-transparent">
-              Ceará Turismo
+              O Mapa do Viajante
             </Link>
             <div className="hidden md:flex items-center space-x-6">
               <Link to="/roteiros" className="text-foreground hover:text-primary transition-smooth">
@@ -178,7 +178,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <h3 className="text-xl font-bold mb-4 gradient-ocean bg-clip-text text-transparent">
-                Ceará Turismo
+                O Mapa do Viajante
               </h3>
               <p className="text-muted-foreground">
                 Seu guia completo para descobrir as maravilhas do Ceará.
