@@ -33,7 +33,7 @@ const destinos = [
     caracteristicas: ["Metrópole", "Vida Noturna", "Centro Cultural", "Praias Urbanas"]
   },
   {
-    nome: "Jericoacoara", 
+    nome: "Jericoacoara",
     descricao: "Vila de pescadores que virou destino mundial",
     caracteristicas: ["Dunas", "Lagoas", "Pôr do Sol", "Kitesurf"]
   },
@@ -68,7 +68,7 @@ const Sobre = () => {
       <nav className="bg-white/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <Link to="/" className="text-2xl font-bold gradient-ocean bg-clip-text text-transparent">
+            <Link to="/" className="text-5xl font-bold mb-4  bg-clip-text text-teal-400">
               Ceará Turismo
             </Link>
             <div className="hidden md:flex items-center space-x-6">
@@ -96,7 +96,7 @@ const Sobre = () => {
             Sobre o Ceará
           </h1>
           <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-            Terra do sol, das praias paradisíacas, da hospitalidade única e de uma cultura rica que encanta 
+            Terra do sol, das praias paradisíacas, da hospitalidade única e de uma cultura rica que encanta
             visitantes do mundo inteiro. Descubra por que o Ceará é considerado um dos destinos mais especiais do Brasil.
           </p>
         </div>
@@ -206,20 +206,20 @@ const Sobre = () => {
               <h2 className="text-4xl font-bold mb-6">História e Cultura</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  O Ceará é berço de uma cultura rica e diversificada, onde as tradições nordestinas 
+                  O Ceará é berço de uma cultura rica e diversificada, onde as tradições nordestinas
                   se misturam com influências indígenas, africanas e europeias, criando uma identidade única.
                 </p>
                 <p>
-                  Terra de grandes nomes da literatura brasileira como José de Alencar e Rachel de Queiroz, 
+                  Terra de grandes nomes da literatura brasileira como José de Alencar e Rachel de Queiroz,
                   o estado também é conhecido por sua música vibrante, artesanato colorido e culinária saborosa.
                 </p>
                 <p>
-                  A hospitalidade cearense é mundialmente reconhecida. Aqui, os visitantes são recebidos 
+                  A hospitalidade cearense é mundialmente reconhecida. Aqui, os visitantes são recebidos
                   não apenas como turistas, mas como amigos que fazem parte da família.
                 </p>
               </div>
             </div>
-            
+
             <div className="grid grid-cols-2 gap-4">
               <Card className="p-6 text-center">
                 <Users className="h-8 w-8 text-primary mx-auto mb-3" />
@@ -264,7 +264,7 @@ const Sobre = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Período de férias e verão. Mais movimentado, preços mais altos, 
+                  Período de férias e verão. Mais movimentado, preços mais altos,
                   mas com toda a infraestrutura funcionando.
                 </p>
               </CardContent>
@@ -277,7 +277,7 @@ const Sobre = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Menos chuva, ventos mais fortes (ideal para kitesurf), 
+                  Menos chuva, ventos mais fortes (ideal para kitesurf),
                   preços mais baixos e menos multidões.
                 </p>
               </CardContent>
@@ -290,7 +290,7 @@ const Sobre = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Chuvas esporádicas, paisagem mais verde, 
+                  Chuvas esporádicas, paisagem mais verde,
                   preços baixos e destinos menos movimentados.
                 </p>
               </CardContent>
@@ -322,6 +322,47 @@ const Sobre = () => {
           </div>
         </div>
       </section>
+      <footer className="bg-foreground text-background py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+              <h3 className="text-xl font-bold mb-4  bg-clip-text text-cyan-400">
+                Ceará Turismo
+              </h3>
+              <p className="text-muted-foreground">
+                Seu guia completo para descobrir as maravilhas do Ceará.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Destinos</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>Fortaleza</li>
+                <li>Jericoacoara</li>
+                <li>Canoa Quebrada</li>
+                <li>Cumbuco</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Experiências</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>Restaurantes</li>
+                <li>Passeios</li>
+                <li>Roteiros</li>
+                <li>Cultura Local</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Contato</h4>
+              <p className="text-sm text-muted-foreground">
+                Descubra o melhor do Ceará conosco
+              </p>
+            </div>
+          </div>
+          <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
+            © 2024 Ceará Turismo. Todos os direitos reservados.
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
