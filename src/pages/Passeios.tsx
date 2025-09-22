@@ -290,7 +290,7 @@ const Passeios = () => {
       <nav className="bg-white/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <Link to="/" className="text-5xl font-bold text-cyan-400">
+            <Link to="/" className="text-5xl font-bold mb-4 text-cyan-400">
               Ceará Turismo
             </Link>
             <div className="hidden md:flex items-center space-x-6">
@@ -312,7 +312,7 @@ const Passeios = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="gradient-ocean py-16">
+      <section className="gradient-sunset py-16">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold text-white mb-6">
             Passeios no Ceará

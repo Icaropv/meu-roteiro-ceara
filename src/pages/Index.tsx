@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, Utensils, Camera, Star } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-ceara.jpg";
+import heroImage from "@/assets/imagem-fundo.png";
 const cidades = [{
   id: "fortaleza",
   nome: "Fortaleza",
@@ -169,12 +169,12 @@ const Index = () => {
           Comece planejando sua viagem dos sonhos pelo Ceará agora mesmo
         </p>
         <Link to="/Roteiros">
-        <Button size="lg" className="gradient-sunset text-white shadow-tropical hover:shadow-ocean">
-          <MapPin className="mr-2 h-5 w-5" />
-          Começar Planejamento
-        </Button>
+          <Button size="lg" className="gradient-sunset text-white shadow-tropical hover:shadow-ocean">
+            <MapPin className="mr-2 h-5 w-5" />
+            Começar Planejamento
+          </Button>
         </Link>
-        
+
       </div>
     </section>
 

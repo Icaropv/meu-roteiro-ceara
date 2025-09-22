@@ -187,7 +187,7 @@ const Restaurantes = () => {
       <nav className="bg-white/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <Link to="/" className="text-5xl font-bold mb-4  bg-clip-text text-orange-400">
+            <Link to="/" className="text-5xl font-bold mb-4  bg-clip-text text-cyan-400">
               Ceará Turismo
             </Link>
             <div className="hidden md:flex items-center space-x-6">

@@ -185,7 +185,7 @@ const Roteiros = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="gradient-hero py-16">
+      <section className="gradient-sunset py-16">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold text-white mb-6">
             Roteiros do Ceará
